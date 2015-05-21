@@ -3,7 +3,6 @@ package me.dm7.barcodescanner.core;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.res.Configuration;
-import android.graphics.Color;
 import android.graphics.Point;
 import android.hardware.Camera;
 import android.os.Handler;

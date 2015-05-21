@@ -11,8 +11,6 @@ import android.widget.FrameLayout;
 
 public class ViewFinderView extends FrameLayout
 {
-	private static final String TAG = "ViewFinderView";
-
 	private Rect mFramingRect;
 
 	private static final int MIN_FRAME_WIDTH = 200;
