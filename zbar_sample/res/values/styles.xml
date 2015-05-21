@@ -1,0 +1,19 @@
+<resources>
+
+    <style name="AppTheme"></style>
+
+    <!-- Base application theme. -->
+    <style name="AppOverlayTheme">
+        <!-- Customize your theme here. -->
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="ActionBarStyle.Transparent" parent="@android:Widget.ActionBar">
+        <item name="android:background">#99000000</item>
+    </style>
+
+    <style name="ActionBarStyle.Transparent.TitleTextStyle">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+</resources>
