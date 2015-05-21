@@ -12,6 +12,7 @@ int id view_finder_view 0x7f080005
 int integer viewfinder_border_length 0x7f060001
 int integer viewfinder_border_width 0x7f060000
 int layout merge_camera_preview_view_finder 0x7f030000
+int layout scanner_activity 0x7f030001
 int string activity_sample 0x7f050007
 int string app_name 0x7f050000
 int string auto_focus_off 0x7f05000d

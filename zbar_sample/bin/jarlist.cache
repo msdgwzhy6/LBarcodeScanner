@@ -1,5 +1,5 @@
 # cache for current jar dependency. DO NOT EDIT.
 # format is <lastModified> <length> <SHA-1> <path>
 # Encoding is UTF-8
-1432033480936 627582 cb6883d96005bc85b3e868f204507ea5b4fa9bbf D:\lynnchurch\LBarcodeScanner\zbar_sample\libs\android-support-v4.jar
-1432032928099 627582 cb6883d96005bc85b3e868f204507ea5b4fa9bbf D:\lynnchurch\LBarcodeScanner\zbar\libs\android-support-v4.jar
+1432215345507 627582 cb6883d96005bc85b3e868f204507ea5b4fa9bbf D:\library\LBarcodeScanner\zbar_sample\libs\android-support-v4.jar
+1432215345393 627582 cb6883d96005bc85b3e868f204507ea5b4fa9bbf D:\library\LBarcodeScanner\zbar\libs\android-support-v4.jar

@@ -1,9 +1,11 @@
-package me.dm7.barcodescanner.zbar.sample;
+package barcodescanner.zbar.sample;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
 import android.widget.Toast;
-
+import me.dm7.barcodescanner.core.ViewFinderView;
 import me.dm7.barcodescanner.zbar.Result;
 import me.dm7.barcodescanner.zbar.ZBarScannerView;
 
@@ -16,6 +18,11 @@ public class ScannerActivity extends Activity implements
 	public void onCreate(Bundle state)
 	{
 		super.onCreate(state);
+		ViewFinderView finderView = new ViewFinderView(this);
+		View view = LayoutInflater.from(this).inflate(
+				R.layout.scanner_activity, null);
+		finderView.addView(view);
+		ZBarScannerView.init(finderView);
 		mScannerView = new ZBarScannerView(this);
 		setContentView(mScannerView);
 	}
