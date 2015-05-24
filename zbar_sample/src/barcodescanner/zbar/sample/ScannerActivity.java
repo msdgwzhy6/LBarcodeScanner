@@ -19,9 +19,12 @@ public class ScannerActivity extends Activity implements
 	{
 		super.onCreate(state);
 		ViewFinderView finderView = new ViewFinderView(this);
+		// 自定义扫描器View
 		View view = LayoutInflater.from(this).inflate(
 				R.layout.scanner_activity, null);
+		// 添加自定义的扫描View
 		finderView.addView(view);
+		// 此处要先调用init()对自定义扫描器的View进行初始化再创建ZBarScannerView对象
 		ZBarScannerView.init(finderView);
 		mScannerView = new ZBarScannerView(this);
 		setContentView(mScannerView);
@@ -31,6 +34,7 @@ public class ScannerActivity extends Activity implements
 	public void onResume()
 	{
 		super.onResume();
+		// 相机相关参数的初始化设置
 		mScannerView.setResultHandler(this);
 		mScannerView.startCamera(-1);
 		mScannerView.setFlash(false);
@@ -46,6 +50,7 @@ public class ScannerActivity extends Activity implements
 	@Override
 	public void handleResult(Result rawResult)
 	{
+		// 此处可自己按项目需求对扫描结果rawResult进行处理
 		Toast.makeText(
 				this,
 				"Contents = " + rawResult.getContents() + ", Format = "
@@ -57,6 +62,7 @@ public class ScannerActivity extends Activity implements
 	public void onPause()
 	{
 		super.onPause();
+		// activity失去焦点停止相机
 		mScannerView.stopCamera();
 	}
 }
